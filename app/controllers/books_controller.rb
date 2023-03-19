@@ -1,4 +1,9 @@
 class BooksController < ApplicationController
+  
+  def new
+    @book = Book.new
+  end
+  
   def show
   end
 
@@ -7,7 +12,10 @@ class BooksController < ApplicationController
 
   def edit
   end
-
-  def new
-  end
+  
+  private
+    def book_params
+      
+    end
+  
 end
